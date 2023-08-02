@@ -1,0 +1,298 @@
+body {
+  background-color: rgb(246, 246, 246);
+}
+#wrap {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+header {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+header .inner {
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header .inner h1 {
+  position: absolute;
+  left: 0px;
+  bottom: 30px;
+}
+
+header .inner h1 a {
+  font: bold 24px/1 "arial";
+  color: #444;
+}
+
+header .inner .util {
+  position: absolute;
+  top: 20px;
+  right: 00px;
+}
+
+header .inner .util li {
+  float: left;
+}
+
+header .inner .util li a {
+  display: inline-block;
+  font: bold 13px/1 "arial";
+  color: #aaaaaa;
+  padding: 0 10px;
+}
+
+header .inner .util li:nth-child(1)::after {
+  display: inline-block;
+  content: "";
+  width: 1px;
+  height: 10px;
+  background-color: #aaaaaa;
+}
+header .inner .util li:nth-child(2)::after {
+  display: inline-block;
+  content: "";
+  width: 1px;
+  height: 10px;
+  background-color: #aaaaaa;
+}
+
+header .inner #gnb {
+  position: absolute;
+  bottom: 10px;
+  left: 200px;
+}
+
+header .inner #gnb li {
+  float: left;
+  margin-left: 30px;
+}
+
+header .inner #gnb li a {
+  display: block; /* 인라인 요소는 block을 설정하여 크기 조절 가능*/
+  font: bold 17px/1 "arial";
+  color: #2a2a2a;
+  padding: 30px 5px;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+
+header .inner .rightinfo {
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  right: 0px;
+}
+header .inner .rightinfo .search {
+  position: relative;
+}
+
+header .inner .rightinfo .search input {
+  padding-left: 20px;
+  border-radius: 50px;
+  width: 200px;
+  height: 40px;
+}
+
+header .inner .rightinfo .search img {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+
+header .inner .rightinfo img {
+  width: 30px;
+}
+
+/*content*/
+#body_wrap {
+  width: 100%;
+}
+
+section {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+section .banner {
+  margin-top: 30px;
+  width: 100%;
+  height: 380px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+section .link {
+  margin-top: 30px;
+  width: 100%;
+  border-radius: 25px;
+  background-color: #ffffff;
+  box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+section .link ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section .link ul li a {
+  display: block;
+  padding: 46px 0;
+  font: 22px/1 "arial";
+  font-weight: 600;
+}
+
+section .link ul li:hover a {
+  color: rgb(55, 128, 206);
+}
+
+/*info*/
+
+section .info > ul {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .info img {
+  display: block;
+  width: 50px;
+  position: relative;
+  left: 40px;
+}
+
+section .info > ul > li > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #ffffff;
+  box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+section .info ul li a .text {
+  padding: 45px;
+  margin-left: 20px;
+}
+
+section .info ul li a .text > h3 {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+section .info ul li a .text > p {
+  text-align: left;
+  font-size: 14px;
+}
+
+section > .info ul > li:hover a {
+  color: #fff;
+  background-color: rgb(54, 84, 183);
+}
+
+section .tab_App {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .tab {
+  margin-top: 30px;
+  padding: 40px;
+  width: 620px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+section .tabMenu .on a {
+  color: blue;
+}
+
+section .tabMenu li {
+  display: inline-block;
+}
+section .tabMenu li a {
+  display: block;
+  padding: 10px;
+  font: bold 20px/1 "arial";
+}
+
+section .tabMenu span a {
+  margin-top: 15px;
+  float: right;
+  text-decoration: underline;
+}
+
+section .tab .notice > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+section .tab .notice > li {
+  margin-left: 30px;
+  list-style: circle;
+  padding: 10px 0;
+}
+
+section .tab .notice > li:hover {
+  text-decoration: underline;
+}
+
+section .tab .notice > li a span {
+  float: right;
+}
+
+section .App {
+  margin-top: 30px;
+  padding: 40px;
+  width: 350px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+section .App img {
+  width: 60px;
+  padding: 20px;
+  margin: 20px 0 10px;
+  border: 1px solid rgb(233, 233, 233);
+  border-radius: 25px;
+}
+
+section .App h2 {
+  font: bold 22px/1 "arial";
+  padding: 0 0 10px;
+}
+
+section .App .bank {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section .App .bank li {
+  width: 33%;
+}
+
+section .App .bank a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section .App .bank a span {
+  padding: 5px;
+  font: bold 14px/1 "arial";
+}
