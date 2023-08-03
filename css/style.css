@@ -1,6 +1,11 @@
 body {
   background-color: rgb(246, 246, 246);
 }
+
+a {
+  color: #333;
+}
+
 #wrap {
   margin: 0 auto;
   width: 1200px;
@@ -119,6 +124,7 @@ header .inner .rightinfo img {
 section {
   margin: 0 auto;
   width: 1200px;
+  padding-bottom: 40px;
 }
 
 section .banner {
@@ -211,6 +217,7 @@ section .tab {
   margin-top: 30px;
   padding: 40px;
   width: 620px;
+  height: 190px;
   border-radius: 25px;
   background-color: #ffffff;
   box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.2);
@@ -254,10 +261,34 @@ section .tab .notice > li a span {
   float: right;
 }
 
+section .tab .notice > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+section .tab .notice2 {
+  display: none;
+}
+
+section .tab .notice2 > li {
+  margin-left: 30px;
+  list-style: circle;
+  padding: 10px 0;
+}
+
+section .tab .notice2 > li:hover {
+  text-decoration: underline;
+}
+
+section .tab .notice2 > li a span {
+  float: right;
+}
+
 section .App {
   margin-top: 30px;
   padding: 40px;
   width: 350px;
+  height: 190px;
   border-radius: 25px;
   background-color: #ffffff;
   box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.2);
@@ -295,4 +326,86 @@ section .App .bank a {
 section .App .bank a span {
   padding: 5px;
   font: bold 14px/1 "arial";
+}
+
+/*footer*/
+footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer span {
+  margin-top: 10px;
+}
+
+footer img {
+  display: inline-block;
+  width: 13px;
+}
+
+.footer_inner {
+  margin: 20px auto;
+  width: 1200px;
+}
+
+.footer-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-top__left {
+  width: 62%;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+}
+
+.footer-top__left li a {
+  display: block;
+  margin-left: 5px;
+  font: bold 12px/1 "arial";
+}
+
+.footer-top__right {
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-top__right > li {
+  position: relative;
+  width: 32%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.footer-top__right > li > a {
+  display: block;
+  padding: 10px;
+  font: bold 12px/1 "arial";
+}
+
+.footer-top__right__sub {
+  display: none;
+  width: 80%;
+  position: absolute;
+  bottom: -5px;
+  left: -5px;
+  padding: 10px;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.footer-top__right__sub > li {
+  width: 100%;
+}
+
+.footer-top__right__sub > li > a {
+  font: bold 12px/2.2 "arial";
+  margin: 10px 0 5px 4px;
 }
