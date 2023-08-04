@@ -364,7 +364,7 @@ footer img {
 .footer-top__left li a {
   display: block;
   margin-left: 5px;
-  font: bold 12px/1 "arial";
+  font: bold 14px/1 "arial";
 }
 
 .footer-top__right {
@@ -385,7 +385,7 @@ footer img {
 .footer-top__right > li > a {
   display: block;
   padding: 10px;
-  font: bold 12px/1 "arial";
+  font: bold 14px/1 "arial";
 }
 
 .footer-top__right__sub {
@@ -406,6 +406,43 @@ footer img {
 }
 
 .footer-top__right__sub > li > a {
-  font: bold 12px/2.2 "arial";
+  font: bold 14px/2.2 "arial";
   margin: 10px 0 5px 4px;
+}
+
+.footer-middle > ul {
+  margin: 20px 20px 20px 10px;
+  font-size: bold 14px/2 "arial";
+  position: relative;
+}
+
+.footer-middle > ul > li span {
+  padding: 0 10px;
+  color: rgb(6, 118, 255);
+}
+
+.footer-middle_sub {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer-middle_sub > li {
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 2.2;
+  padding: 20px;
+  border: 1px solid gainsboro;
+}
+
+.footer-middle_sub > li:nth-child(1) {
+  border-bottom: none;
+}
+
+.footer-middle_sub > li:nth-child(2) {
+  border-bottom: none;
+}
+.footer-middle_sub > li:nth-child(3) {
+  border-bottom: none;
 }
