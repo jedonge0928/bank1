@@ -44,14 +44,44 @@
     </div>
     <div id="body_wrap">
       <section>
-        <div class="banner"></div>
+        <div class="banner">
+          <div class="banner_inner">
+            <div class="banner_slide">
+              <div class="banner_text">
+                <h2>현재와 미래를 잇는 열쇠</h2>
+                <h1>ESG 경영실천</h1>
+                <p>지구를 사랑하고 고객을 위하는 착한 은행</p>
+                <p class="btn">
+                  자세히보기 <img src="asset/arrow-rigjt.svg" alt="" />
+                </p>
+              </div>
+              <div class="banner_img">
+                <img src="./asset/home.svg" alt="" />
+              </div>
+            </div>
+            <div class="banner_slide">
+              <div class="banner_text">
+                <h2>금융과 생활을 쉽고 편리하게</h2>
+                <h1>모바일 금융</h1>
+                <p>모든 순간이 행복할 당신의 곁에 언제나</p>
+                <p class="btn">
+                  자세히보기 <img src="asset/arrow-rigjt.svg" alt="" />
+                </p>
+              </div>
+              <div class="banner_img">
+                <img src="asset/home.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="link">
           <ul>
-            <li><a href="#">빠른조회</a></li>
-            <li><a href="#">금융소비자/미원</a></li>
-            <li><a href="#">상품공시실</a></li>
-            <li><a href="#">행복파트너</a></li>
-            <li><a href="#">고객센터</a></li>
+            <li><a href="disable">빠른조회</a></li>
+            <li><a href="disable">금융소비자/미원</a></li>
+            <li><a href="disable">퇴직연금</a></li>
+            <li><a href="disable">상품공시실</a></li>
+            <li><a href="disable">행복파트너</a></li>
+            <li><a href="disable">고객센터</a></li>
           </ul>
         </div>
         <div class="info">
@@ -139,17 +169,17 @@
             <ul class="bank">
               <li>
                 <a href=""
-                  ><img src="./asset/book.svg" alt="" /><span>im뱅크</span></a
+                  ><img src="asset/book.svg" alt="" /><span>im뱅크</span></a
                 >
               </li>
               <li>
                 <a href=""
-                  ><img src="./asset/book.svg" alt="" /><span>im샵</span></a
+                  ><img src="asset/book.svg" alt="" /><span>im샵</span></a
                 >
               </li>
               <li>
                 <a href=""
-                  ><img src="./asset/book.svg" alt="" /><span
+                  ><img src="asset/book.svg" alt="" /><span
                     >DGB기업뱅킹</span
                   ></a
                 >
@@ -173,7 +203,7 @@
             <li><a href="#">영업점안내</a></li>
           </ul>
           <ul class="footer-top__right">
-            <li>
+            <li class="footer-top__right__menu">
               <a href="#"
                 >DGB SNS <span><img src="./asset/arrow-down.svg" alt="" /></span
               ></a>
@@ -190,7 +220,7 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="footer-top__right__menu">
               <a href="#"
                 >DGB금융그룹
                 <span><img src="./asset/arrow-down.svg" alt="" /></span
@@ -228,25 +258,30 @@
             </li>
           </ul>
         </div>
-        <div class="footer-middle">
-          <ul>
-            <li>
-              대표전화<span>1566-5050/1588-5050</span
-              ><a href="#"><img src="./asset/arrow-down.svg" alt="" /></a>
-              <ul class="footer-middle_sub">
-                <li>대표전화<span>1588-5050</span></li>
-                <li>대표전화<span>1588-5050</span></li>
-                <li>대표전화<span>1588-5050</span></li>
-                <li>
-                  대표전화<span>1566-5050/1588-5050</span
-                  ><a href="#"><img src="./asset/arrow-down.svg" alt="" /></a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+        <div class="footer-middle-menu">
+          <button id="call-button">
+            대표전화<span>1566-5050/1588-5050</span
+            ><a href="#"><img src="./asset/arrow-down.svg" /></a>
+          </button>
+          <div id="menu" class="menu-content" style="display: none">
+            <ul>
+              <li>대표전화 <span>1566-5050/1588-5050</span></li>
+              <li>대표전화 <span>1566-5050/1588-5050</span></li>
+              <li>대표전화 <span>1566-5050/1588-5050</span></li>
+              <li>
+                대표전화 <span>1566-5050/1588-5050</span
+                ><a><img src="./asset/arrow-up.svg" alt=></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-down"></div>
+        <div class="footer-down">
+          <p>Copyright © DGB Daegu Bank, All Rights Reserved.</p>
+          <a href=""><img src="./asset/bell.svg" alt="" /></a>
+        </div>
       </div>
     </footer>
+    <script src="./js/js.js"></script>
   </body>
 </html>
+0

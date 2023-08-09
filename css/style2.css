@@ -547,45 +547,63 @@ footer img {
   margin: 10px 0 5px 4px;
 }
 
-.footer-middle-menu {
-  display: block;
+.footer-middle {
   position: relative;
 }
 
-#call-button {
-  font: bold 14px/2 "arial";
-  border: none;
-  background-color: #f6f6f6;
+label {
+  padding: 20px 20px 20px 10px;
 }
 
-#call-button span {
+label.menu {
+  margin: 20px 20px 20px 10px;
+  font-size: bold 14px/2 "arial";
+}
+
+label span {
   padding: 0 10px;
   color: rgb(6, 118, 255);
 }
 
-#menu > ul {
-  position: absolute;
-  top: -199px;
-  left: -22px;
-  background-color: white;
-  border: 1px solid gainsboro;
-  border-radius: 15px;
-  width: 280px;
+input#menu {
+  display: none;
+  z-index: 2;
 }
 
-#menu > ul > li {
-  text-align: center;
-  font: normal 14px/2.2 "arial";
-  padding: 15px;
+nav#middle_sub {
+  display: none;
+  position: absolute;
+  top: -187px;
+  left: 1px;
+}
+
+nav#middle_sub > ul {
+  background-color: white;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid gainsboro;
+}
+
+nav#middle_sub > ul > li {
+  padding: 20px 20px 20px 10px;
+  font-size: bold 14px/2 "arial";
   border-bottom: 1px solid gainsboro;
 }
 
-#menu > ul > li > a img {
-  margin-left: 16px;
+input#menu {
+  position: absolute;
+  top: -5px;
+  background-color: #444;
+  width: 500px;
+  height: 40px;
 }
 
-#menu > ul > li:nth-child(4) {
-  border-bottom: none;
+input#menu:checked + nav#middle_sub {
+  display: block;
+}
+
+nav#middle_sub + input#menu:checked {
+  display: none;
 }
 
 .footer-down {
