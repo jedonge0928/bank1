@@ -386,27 +386,27 @@ section .tab .notice > li:hover {
 section .tab .notice > li a span {
   float: right;
 }
-
-section .tab .notice > ul {
-  display: flex;
-  justify-content: space-between;
-}
+/**/
 
 section .tab .notice2 {
   display: none;
 }
 
-section .tab .notice2 > li {
+section .tab .notice2 > ul {
+  justify-content: space-between;
+}
+
+section .tab .notice2 > ul > li {
   margin-left: 30px;
   list-style: circle;
   padding: 10px 0;
 }
 
-section .tab .notice2 > li:hover {
+section .tab .notice2 > ul > li:hover {
   text-decoration: underline;
 }
 
-section .tab .notice2 > li a span {
+section .tab .notice2 > ul > li > a > span {
   float: right;
 }
 
@@ -571,6 +571,7 @@ footer img {
   border: 1px solid gainsboro;
   border-radius: 15px;
   width: 280px;
+  box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 #menu > ul > li {
