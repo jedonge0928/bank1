@@ -48,7 +48,8 @@ header .inner .util li a {
   display: inline-block;
   font: bold 13px/1 "arial";
   color: #aaaaaa;
-  padding: 0 10px;
+  padding: 0 10px;  
+  background-color: white;
 }
 
 header .inner .util li:nth-child(1)::after {
